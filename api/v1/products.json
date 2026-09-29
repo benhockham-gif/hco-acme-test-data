@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "supplier": "Kettle & Co (made up)",
+    "page": 1,
+    "per_page": 50,
+    "total": 6
+  },
+  "data": [
+    {
+      "id": "KC-01",
+      "barcode": "5099990004018",
+      "title": "Stainless steel kettle 1.7L",
+      "maker": "Kettle & Co",
+      "details": {
+        "summary": "Fast-boil kettle with a brushed stainless steel finish and a 360° base."
+      },
+      "pricing": {
+        "amount": "34.50",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-01.png"
+      },
+      "type": "Kettles",
+      "availability": "in stock",
+      "bundle_items": ""
+    },
+    {
+      "id": "KC-02",
+      "barcode": "5099990004025",
+      "title": "Two-slice toaster",
+      "maker": "Kettle & Co",
+      "details": {
+        "summary": ""
+      },
+      "pricing": {
+        "amount": "29.00",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-02.png"
+      },
+      "type": "Toasters",
+      "availability": "in stock",
+      "bundle_items": ""
+    },
+    {
+      "id": "KC-03",
+      "barcode": "5099990004032",
+      "title": "Aluminum cookware set",
+      "maker": "Kettle & Co",
+      "details": {
+        "summary": "A five-piece aluminum set in a slate gray color, ideal for any kitchen center."
+      },
+      "pricing": {
+        "amount": "79.99",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-03.png"
+      },
+      "type": "Cookware",
+      "availability": "in stock",
+      "bundle_items": ""
+    },
+    {
+      "id": "KC-04",
+      "barcode": "5099990004049",
+      "title": "Glass kettle with blue light",
+      "maker": "Kettle & Co",
+      "details": {
+        "summary": "Borosilicate glass kettle that glows blue while boiling."
+      },
+      "pricing": {
+        "amount": "39.00",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-04.png"
+      },
+      "type": "Kettles",
+      "availability": "recalled",
+      "bundle_items": ""
+    },
+    {
+      "id": "KC-05",
+      "barcode": "5099990004056",
+      "title": "Breakfast set",
+      "maker": "Kettle & Co",
+      "details": {},
+      "pricing": {
+        "amount": "59.00",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-05.png"
+      },
+      "type": "Kettles",
+      "availability": "in stock",
+      "bundle_items": "KC-01, KC-02"
+    },
+    {
+      "id": "KC-06",
+      "barcode": "5099990005008",
+      "title": "LED cabinet strip, 1 metre",
+      "maker": "Brightside",
+      "details": {
+        "summary": "Stick-on LED strip for under cabinets."
+      },
+      "pricing": {
+        "amount": "19.99",
+        "currency": "GBP"
+      },
+      "media": {
+        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-06.png"
+      },
+      "type": "Strip lights",
+      "availability": "in stock",
+      "bundle_items": ""
+    }
+  ]
+}
