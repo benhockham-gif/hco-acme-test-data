@@ -67,10 +67,10 @@ out("spreadsheet/gartenwelt-preisliste.xlsx", xlsx(sheet, { sheetName: "Preislis
 
 // 4. Website (HTML): Garden Direct, one static page of product cards.
 const site = [
-  { sku: "GD-11", gtin: SECATEURS, name: "GreenEdge bypass secateurs", brand: "GreenEdge", description: "Hardened steel bypass secateurs for clean cuts on live stems.", category: "Garden tools", price: "£14.99", image: "images/gd-11.png" },
-  { sku: "GD-12", gtin: SPADE, name: "GreenEdge digging spade", brand: "GreenEdge", description: "Steel-bladed digging spade with an ash handle and a D grip.", category: "Garden tools", price: "£29.99", image: "images/gd-12.png" },
-  { sku: "GD-13", gtin: ean(713), name: "Rain gauge", brand: "Garden Direct", description: "", category: "Watering", price: "£4.99", image: "images/gd-13.png" },
-  { sku: "GD-14", gtin: ean(714), name: "Oscillating sprinkler", brand: "Garden Direct", description: "Covers up to 200 square metres with an adjustable arc.", category: "Watering", price: "£18.00", image: "images/gd-14.png" },
+  { sku: "GD-11", gtin: SECATEURS, name: "GreenEdge bypass secateurs", brand: "GreenEdge", description: "Hardened steel bypass secateurs for clean cuts on live stems.", category: "Garden tools", price: "£14.99", image: "../images/gd-11.png" },
+  { sku: "GD-12", gtin: SPADE, name: "GreenEdge digging spade", brand: "GreenEdge", description: "Steel-bladed digging spade with an ash handle and a D grip.", category: "Garden tools", price: "£29.99", image: "../images/gd-12.png" },
+  { sku: "GD-13", gtin: ean(713), name: "Rain gauge", brand: "Garden Direct", description: "", category: "Watering", price: "£4.99", image: "../images/gd-13.png" },
+  { sku: "GD-14", gtin: ean(714), name: "Oscillating sprinkler", brand: "Garden Direct", description: "Covers up to 200 square metres with an adjustable arc.", category: "Watering", price: "£18.00", image: "../images/gd-14.png" },
 ];
 const html = `<!doctype html>
 <html lang="en-GB">
