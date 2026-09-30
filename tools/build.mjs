@@ -39,13 +39,15 @@ ${feed.map((p) => `    <product>\n${Object.entries(p).map(([k, v]) => `      <${
 `;
 out("feed/brightside-lighting.xml", feedXml);
 
+// HCP-130 UAT (30 Sep 2026): KC-03 dropped from the API to show "withdrawn"; GD-14 price
+// changed from £18.00 to £17.50 to show "changed".
+
 // 2. API (JSON): Kettle & Co. Nested fields; some descriptions missing; American spelling.
 const api = {
-  meta: { supplier: "Kettle & Co (made up)", page: 1, per_page: 50, total: 6 },
+  meta: { supplier: "Kettle & Co (made up)", page: 1, per_page: 50, total: 5 },
   data: [
     { id: "KC-01", barcode: ean(401), title: "Stainless steel kettle 1.7L", maker: "Kettle & Co", details: { summary: "Fast-boil kettle with a brushed stainless steel finish and a 360° base." }, pricing: { amount: "34.50", currency: "GBP" }, media: { main: img("KC-01") }, type: "Kettles", availability: "in stock", bundle_items: "" },
     { id: "KC-02", barcode: ean(402), title: "Two-slice toaster", maker: "Kettle & Co", details: { summary: "" }, pricing: { amount: "29.00", currency: "GBP" }, media: { main: img("KC-02") }, type: "Toasters", availability: "in stock", bundle_items: "" },
-    { id: "KC-03", barcode: ean(403), title: "Aluminum cookware set", maker: "Kettle & Co", details: { summary: "A five-piece aluminum set in a slate gray color, ideal for any kitchen center." }, pricing: { amount: "79.99", currency: "GBP" }, media: { main: img("KC-03") }, type: "Cookware", availability: "in stock", bundle_items: "" },
     { id: "KC-04", barcode: ean(404), title: "Glass kettle with blue light", maker: "Kettle & Co", details: { summary: "Borosilicate glass kettle that glows blue while boiling." }, pricing: { amount: "39.00", currency: "GBP" }, media: { main: img("KC-04") }, type: "Kettles", availability: "recalled", bundle_items: "" },
     { id: "KC-05", barcode: ean(405), title: "Breakfast set", maker: "Kettle & Co", details: {}, pricing: { amount: "59.00", currency: "GBP" }, media: { main: img("KC-05") }, type: "Kettles", availability: "in stock", bundle_items: "KC-01, KC-02" },
     { id: "KC-06", barcode: STRIP, title: "LED cabinet strip, 1 metre", maker: "Brightside", details: { summary: "Stick-on LED strip for under cabinets." }, pricing: { amount: "19.99", currency: "GBP" }, media: { main: img("KC-06") }, type: "Strip lights", availability: "in stock", bundle_items: "" },
@@ -70,7 +72,7 @@ const site = [
   { sku: "GD-11", gtin: SECATEURS, name: "GreenEdge bypass secateurs", brand: "GreenEdge", description: "Hardened steel bypass secateurs for clean cuts on live stems.", category: "Garden tools", price: "£14.99", image: "../images/gd-11.png" },
   { sku: "GD-12", gtin: SPADE, name: "GreenEdge digging spade", brand: "GreenEdge", description: "Steel-bladed digging spade with an ash handle and a D grip.", category: "Garden tools", price: "£29.99", image: "../images/gd-12.png" },
   { sku: "GD-13", gtin: ean(713), name: "Rain gauge", brand: "Garden Direct", description: "", category: "Watering", price: "£4.99", image: "../images/gd-13.png" },
-  { sku: "GD-14", gtin: ean(714), name: "Oscillating sprinkler", brand: "Garden Direct", description: "Covers up to 200 square metres with an adjustable arc.", category: "Watering", price: "£18.00", image: "../images/gd-14.png" },
+  { sku: "GD-14", gtin: ean(714), name: "Oscillating sprinkler", brand: "Garden Direct", description: "Covers up to 200 square metres with an adjustable arc.", category: "Watering", price: "£17.50", image: "../images/gd-14.png" },
 ];
 const html = `<!doctype html>
 <html lang="en-GB">
@@ -106,6 +108,6 @@ function png(size, [r, g, b]) {
   const ihdr = Buffer.alloc(13); ihdr.writeUInt32BE(size, 0); ihdr.writeUInt32BE(size, 4); ihdr[8] = 8; ihdr[9] = 2;
   return Buffer.concat([Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]), chunk("IHDR", ihdr), chunk("IDAT", deflateSync(Buffer.concat(Array(size).fill(row)))), chunk("IEND", Buffer.alloc(0))]);
 }
-const skus = [...feed.map((p) => p.sku), ...api.data.map((p) => p.id), ...sheet.slice(1).map((r) => r[0]), ...site.map((p) => p.sku)];
+const skus = [...feed.map((p) => p.sku), ...[...api.data.map((p) => p.id), "KC-03"].sort(), ...sheet.slice(1).map((r) => r[0]), ...site.map((p) => p.sku)];
 skus.forEach((sku, i) => out(`images/${sku.toLowerCase()}.png`, png(64, [60 + ((i * 37) % 160), 90 + ((i * 53) % 140), 120 + ((i * 29) % 120)])));
 console.log(`Built ${skus.length} products' files`);

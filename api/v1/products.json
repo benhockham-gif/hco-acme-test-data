@@ -3,7 +3,7 @@
     "supplier": "Kettle & Co (made up)",
     "page": 1,
     "per_page": 50,
-    "total": 6
+    "total": 5
   },
   "data": [
     {
@@ -41,25 +41,6 @@
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-02.png"
       },
       "type": "Toasters",
-      "availability": "in stock",
-      "bundle_items": ""
-    },
-    {
-      "id": "KC-03",
-      "barcode": "5099990004032",
-      "title": "Aluminum cookware set",
-      "maker": "Kettle & Co",
-      "details": {
-        "summary": "A five-piece aluminum set in a slate gray color, ideal for any kitchen center."
-      },
-      "pricing": {
-        "amount": "79.99",
-        "currency": "GBP"
-      },
-      "media": {
-        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-03.png"
-      },
-      "type": "Cookware",
       "availability": "in stock",
       "bundle_items": ""
     },
