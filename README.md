@@ -21,3 +21,10 @@ prices and image URLs (`images/`, plain coloured squares).
 
 ACME's settings live in the Confluence space ACME, not here. Rebuild the files with
 `node tools/build.mjs`.
+
+| feed (CSV) | Volume Supplies (acme-volume, HCP-266) | `volume/products.csv` (`node tools/volume.mjs [count]`) |
+
+`volume/products.csv` times an upload at full volume (2,600 made-up products, like Artis UK). About a
+third have no description, and every tenth name uses the supplier shorthand "S/S" for ACME's
+Terminology rule. After the timing it is trimmed to a few products, so the rest are withdrawn and
+aren't sent to Workers AI by the overnight enrichment job.
