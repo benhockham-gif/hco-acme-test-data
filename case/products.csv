@@ -1,0 +1,6 @@
+sku,name,brand,category,price,currency,pack_size
+CS-001,"Tumbler, case of 6",Case Supplies,Kitchen,3.99,GBP,6
+CS-002,"Dinner plate, case of 4",Case Supplies,Kitchen,4.99,GBP,4
+CS-003,"Espresso cup, case of 3",Case Supplies,Kitchen,10.00,GBP,3
+CS-004,Serving bowl,Case Supplies,Kitchen,7.50,GBP,
+CS-005,"Teapot, sold singly",Case Supplies,Kitchen,12.00,GBP,1

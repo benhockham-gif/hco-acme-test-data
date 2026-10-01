@@ -1,11 +1,11 @@
-sku,name,brand,category,price,currency,description
-VS-00001,Ceramic mixing bowl 1,Volume Supplies,Kitchen,3.99,GBP,"A made-up mixing bowl for ACME's volume test, number 1."
-VS-00002,Saucepan 18 cm 2,Volume Supplies,Kitchen,4.99,GBP,"A made-up saucepan for ACME's volume test, number 2."
-VS-00003,Brass desk lamp 3,Volume Supplies,Lighting,5.99,GBP,
-VS-00004,LED strip light 2 m 4,Volume Supplies,Lighting,6.99,GBP,"A made-up strip light for ACME's volume test, number 4."
-VS-00005,Hand trowel 5,Volume Supplies,Garden,7.99,GBP,"A made-up trowel for ACME's volume test, number 5."
-VS-00006,Rubber garden hose 15 m 6,Volume Supplies,Garden,8.99,GBP,
-VS-00007,Kettle 1.7 L 7,Volume Supplies,Kitchen,9.99,GBP,"A made-up kettle for ACME's volume test, number 7."
-VS-00008,Ceramic mixing bowl 8,Volume Supplies,Kitchen,10.99,GBP,"A made-up mixing bowl for ACME's volume test, number 8."
-VS-00009,Saucepan 18 cm 9,Volume Supplies,Kitchen,11.99,GBP,
-VS-00010,S/S hand trowel 10,Volume Supplies,Lighting,12.99,GBP,"A made-up hand trowel for ACME's volume test, number 10."
+sku,name,brand,category,price,currency,description,pack_size
+VS-00001,Ceramic mixing bowl 1,Volume Supplies,Kitchen,3.99,GBP,"A made-up mixing bowl for ACME's volume test, number 1.",6
+VS-00002,Saucepan 18 cm 2,Volume Supplies,Kitchen,4.99,GBP,"A made-up saucepan for ACME's volume test, number 2.",4
+VS-00003,Brass desk lamp 3,Volume Supplies,Lighting,5.99,GBP,,
+VS-00004,LED strip light 2 m 4,Volume Supplies,Lighting,6.99,GBP,"A made-up strip light for ACME's volume test, number 4.",1
+VS-00005,Hand trowel 5,Volume Supplies,Garden,7.99,GBP,"A made-up trowel for ACME's volume test, number 5.",
+VS-00006,Rubber garden hose 15 m 6,Volume Supplies,Garden,8.99,GBP,,
+VS-00007,Kettle 1.7 L 7,Volume Supplies,Kitchen,9.99,GBP,"A made-up kettle for ACME's volume test, number 7.",
+VS-00008,Ceramic mixing bowl 8,Volume Supplies,Kitchen,10.99,GBP,"A made-up mixing bowl for ACME's volume test, number 8.",
+VS-00009,Saucepan 18 cm 9,Volume Supplies,Kitchen,11.99,GBP,,
+VS-00010,S/S hand trowel 10,Volume Supplies,Lighting,12.99,GBP,"A made-up hand trowel for ACME's volume test, number 10.",

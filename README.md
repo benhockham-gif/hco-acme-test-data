@@ -28,3 +28,11 @@ ACME's settings live in the Confluence space ACME, not here. Rebuild the files w
 third have no description, and every tenth name uses the supplier shorthand "S/S" for ACME's
 Terminology rule. After the timing it is trimmed to a few products, so the rest are withdrawn and
 aren't sent to Workers AI by the overnight enrichment job.
+
+| feed (CSV) | Case Supplies (acme-case, HCP-288) | `case/products.csv` |
+
+HCP-288 (price_each and price_per_pack): `volume/products.csv` has a `pack_size` column (two packs,
+one sold singly, the rest blank) for a supplier priced **per item**; `case/products.csv` is a
+supplier priced **per case** (cases of 6, 4 and 3, one with no pack size, one sold singly). Their
+basis is set on ACME's IP Settings: Suppliers page, not here. 3.99 for 6 (0.665) and 4.99 for 4
+(1.2475) show rounding half up after the calculation.
