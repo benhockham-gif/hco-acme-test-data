@@ -22,6 +22,8 @@
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-01.png"
       },
       "type": "Kettles",
+      "vendor": "Kettle & Co",
+      "collection": "Brushed Steel",
       "availability": "in stock",
       "bundle_items": ""
     },
@@ -41,6 +43,8 @@
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-02.png"
       },
       "type": "Toasters",
+      "vendor": "Kettle & Co",
+      "collection": "Brushed Steel",
       "availability": "in stock",
       "bundle_items": ""
     },
@@ -60,6 +64,8 @@
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-04.png"
       },
       "type": "Kettles",
+      "vendor": "Kettle & Co",
+      "collection": "Glass",
       "availability": "recalled",
       "bundle_items": ""
     },
@@ -77,6 +83,8 @@
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-05.png"
       },
       "type": "Kettles",
+      "vendor": "Kettle & Co",
+      "collection": "Brushed Steel",
       "availability": "in stock",
       "bundle_items": "KC-01, KC-02"
     },

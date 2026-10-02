@@ -22,13 +22,15 @@ const SECATEURS = ean(700); // Gartenwelt spreadsheet + Garden Direct website
 const SPADE = ean(701);    // Gartenwelt spreadsheet + Garden Direct website
 
 // 1. Feed (XML): Brightside Lighting.
+// HCP-302: supplier_name, product_range and stock (made up) give Infinite Search supplier, range
+// and availability filters to show (mapped on ACME's IP Settings: Supplier Field Mappings).
 const feed = [
-  { sku: "BL-100", ean: ean(100), title: "Arc floor lamp", brand: "Brightside", description: "A tall arched floor lamp with a weighted marble base and a 2 m reach.", category: "Floor lamps", price: "£89.00", image: img("BL-100"), colour: "", wattage: "", parent_sku: "", accessories: "BL-200", status: "Active" },
-  { sku: "BL-100-BLK", ean: ean(101), title: "Arc floor lamp, black", brand: "Brightside", description: "The Arc floor lamp in matt black.", category: "Floor lamps", price: "£89.00", image: img("BL-100-BLK"), colour: "Black", wattage: "", parent_sku: "BL-100", accessories: "BL-200", status: "Active" },
-  { sku: "BL-100-BRS", ean: ean(102), title: "Arc floor lamp, brass", brand: "Brightside", description: "The Arc floor lamp in brushed brass.", category: "Floor lamps", price: "£94.00", image: img("BL-100-BRS"), colour: "Brass", wattage: "", parent_sku: "BL-100", accessories: "BL-200", status: "Active" },
-  { sku: "BL-200", ean: ean(200), title: "LED bulb E27 warm white", brand: "Brightside", description: "Dimmable E27 LED bulb, 2700 K.", category: "Bulbs", price: "£6.50", image: img("BL-200"), colour: "", wattage: "9 W", parent_sku: "", accessories: "", status: "Active" },
-  { sku: "BL-300", ean: ean(300), title: "Linen pendant shade", brand: "Brightside", description: "", category: "Shades", price: "£32.00", image: img("BL-300"), colour: "Natural", wattage: "", parent_sku: "", accessories: "BL-200", status: "Discontinued" },
-  { sku: "BL-500", ean: STRIP, title: "Under-cabinet LED strip light 1m", brand: "Brightside", description: "Slim LED strip for under kitchen cabinets, with a touch switch.", category: "Strip lights", price: "£21.50", image: img("BL-500"), colour: "", wattage: "0.006 kW", parent_sku: "", accessories: "", status: "Active" },
+  { sku: "BL-100", ean: ean(100), title: "Arc floor lamp", brand: "Brightside", description: "A tall arched floor lamp with a weighted marble base and a 2 m reach.", category: "Floor lamps", price: "£89.00", image: img("BL-100"), colour: "", wattage: "", parent_sku: "", accessories: "BL-200", supplier_name: "Brightside Lighting", product_range: "Arc", stock: "in stock", status: "Active" },
+  { sku: "BL-100-BLK", ean: ean(101), title: "Arc floor lamp, black", brand: "Brightside", description: "The Arc floor lamp in matt black.", category: "Floor lamps", price: "£89.00", image: img("BL-100-BLK"), colour: "Black", wattage: "", parent_sku: "BL-100", accessories: "BL-200", supplier_name: "Brightside Lighting", product_range: "Arc", stock: "low stock", status: "Active" },
+  { sku: "BL-100-BRS", ean: ean(102), title: "Arc floor lamp, brass", brand: "Brightside", description: "The Arc floor lamp in brushed brass.", category: "Floor lamps", price: "£94.00", image: img("BL-100-BRS"), colour: "Brass", wattage: "", parent_sku: "BL-100", accessories: "BL-200", supplier_name: "Brightside Lighting", product_range: "Arc", stock: "out of stock", status: "Active" },
+  { sku: "BL-200", ean: ean(200), title: "LED bulb E27 warm white", brand: "Brightside", description: "Dimmable E27 LED bulb, 2700 K.", category: "Bulbs", price: "£6.50", image: img("BL-200"), colour: "", wattage: "9 W", parent_sku: "", accessories: "", supplier_name: "Brightside Lighting", product_range: "Everyday LED", stock: "in stock", status: "Active" },
+  { sku: "BL-300", ean: ean(300), title: "Linen pendant shade", brand: "Brightside", description: "", category: "Shades", price: "£32.00", image: img("BL-300"), colour: "Natural", wattage: "", parent_sku: "", accessories: "BL-200", supplier_name: "Brightside Lighting", product_range: "Linen", stock: "out of stock", status: "Discontinued" },
+  { sku: "BL-500", ean: STRIP, title: "Under-cabinet LED strip light 1m", brand: "Brightside", description: "Slim LED strip for under kitchen cabinets, with a touch switch.", category: "Strip lights", price: "£21.50", image: img("BL-500"), colour: "", wattage: "0.006 kW", parent_sku: "", accessories: "", supplier_name: "Brightside Lighting", product_range: "Kitchen Glow", stock: "in stock", status: "Active" },
 ];
 const feedXml = `<?xml version="1.0" encoding="UTF-8"?>
 <catalogue supplier="Brightside Lighting (made up)" generated="2026-09-29">
@@ -43,13 +45,15 @@ out("feed/brightside-lighting.xml", feedXml);
 // changed from £18.00 to £17.50 to show "changed".
 
 // 2. API (JSON): Kettle & Co. Nested fields; some descriptions missing; American spelling.
+// HCP-302: vendor and collection (made up) for the supplier and range filters. KC-06 has neither,
+// so the matched strip light (BL-500) takes Brightside's values without a conflict to review.
 const api = {
   meta: { supplier: "Kettle & Co (made up)", page: 1, per_page: 50, total: 5 },
   data: [
-    { id: "KC-01", barcode: ean(401), title: "Stainless steel kettle 1.7L", maker: "Kettle & Co", details: { summary: "Fast-boil kettle with a brushed stainless steel finish and a 360° base." }, pricing: { amount: "34.50", currency: "GBP" }, media: { main: img("KC-01") }, type: "Kettles", availability: "in stock", bundle_items: "" },
-    { id: "KC-02", barcode: ean(402), title: "Two-slice toaster", maker: "Kettle & Co", details: { summary: "" }, pricing: { amount: "29.00", currency: "GBP" }, media: { main: img("KC-02") }, type: "Toasters", availability: "in stock", bundle_items: "" },
-    { id: "KC-04", barcode: ean(404), title: "Glass kettle with blue light", maker: "Kettle & Co", details: { summary: "Borosilicate glass kettle that glows blue while boiling." }, pricing: { amount: "39.00", currency: "GBP" }, media: { main: img("KC-04") }, type: "Kettles", availability: "recalled", bundle_items: "" },
-    { id: "KC-05", barcode: ean(405), title: "Breakfast set", maker: "Kettle & Co", details: {}, pricing: { amount: "59.00", currency: "GBP" }, media: { main: img("KC-05") }, type: "Kettles", availability: "in stock", bundle_items: "KC-01, KC-02" },
+    { id: "KC-01", barcode: ean(401), title: "Stainless steel kettle 1.7L", maker: "Kettle & Co", details: { summary: "Fast-boil kettle with a brushed stainless steel finish and a 360° base." }, pricing: { amount: "34.50", currency: "GBP" }, media: { main: img("KC-01") }, type: "Kettles", vendor: "Kettle & Co", collection: "Brushed Steel", availability: "in stock", bundle_items: "" },
+    { id: "KC-02", barcode: ean(402), title: "Two-slice toaster", maker: "Kettle & Co", details: { summary: "" }, pricing: { amount: "29.00", currency: "GBP" }, media: { main: img("KC-02") }, type: "Toasters", vendor: "Kettle & Co", collection: "Brushed Steel", availability: "in stock", bundle_items: "" },
+    { id: "KC-04", barcode: ean(404), title: "Glass kettle with blue light", maker: "Kettle & Co", details: { summary: "Borosilicate glass kettle that glows blue while boiling." }, pricing: { amount: "39.00", currency: "GBP" }, media: { main: img("KC-04") }, type: "Kettles", vendor: "Kettle & Co", collection: "Glass", availability: "recalled", bundle_items: "" },
+    { id: "KC-05", barcode: ean(405), title: "Breakfast set", maker: "Kettle & Co", details: {}, pricing: { amount: "59.00", currency: "GBP" }, media: { main: img("KC-05") }, type: "Kettles", vendor: "Kettle & Co", collection: "Brushed Steel", availability: "in stock", bundle_items: "KC-01, KC-02" },
     { id: "KC-06", barcode: STRIP, title: "LED cabinet strip, 1 metre", maker: "Brightside", details: { summary: "Stick-on LED strip for under cabinets." }, pricing: { amount: "19.99", currency: "GBP" }, media: { main: img("KC-06") }, type: "Strip lights", availability: "in stock", bundle_items: "" },
   ],
 };

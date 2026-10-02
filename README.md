@@ -47,3 +47,9 @@ HCP-271 (Publisher push to Infinite Images): four products, each with a main `im
 `images` list of further pictures with attributes (`alt`, `version`). The proof changes one
 picture's `version` (the change signal), removes one product (withdrawn) and sets one product's
 `status` to `recalled` (ACME's Lifecycle Rules), one step at a time.
+
+HCP-302 (Infinite Search filters, Ben's approval 2 Oct 2026): the Brightside feed carries `supplier_name`,
+`product_range` and `stock`, and the Kettle & Co API carries `vendor` and `collection` (its `availability`
+was already there). ACME's IP Settings map them to the custom fields `supplier`, `range` and `availability`,
+granted to `acme-search` only, so every Infinite Search filter (HCP-272 §4) has values. KC-06 has neither
+new field, so the strip light it shares with BL-500 takes Brightside's values with no conflict to review.
