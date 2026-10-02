@@ -1,0 +1,83 @@
+{
+  "supplier": "Gallery Homeware (made up)",
+  "products": [
+    {
+      "sku": "GL-001",
+      "name": "Oak serving board",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "24.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-01.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-02.png",
+          "alt": "Side view",
+          "version": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-03.png",
+          "alt": "In use",
+          "version": "1"
+        }
+      ]
+    },
+    {
+      "sku": "GL-002",
+      "name": "Stoneware jug",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "18.50",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-11.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-12.png",
+          "alt": "Handle detail",
+          "version": "1"
+        }
+      ]
+    },
+    {
+      "sku": "GL-003",
+      "name": "Linen tea towel",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "7.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-13.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-14.png",
+          "alt": "Folded",
+          "version": "1"
+        }
+      ]
+    },
+    {
+      "sku": "GL-004",
+      "name": "Glass storage jar",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "9.99",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gw-7001.png",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gw-7002.png",
+          "alt": "Lid open",
+          "version": "1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gw-7003.png",
+          "alt": "Set of three",
+          "version": "1"
+        }
+      ]
+    }
+  ]
+}

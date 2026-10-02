@@ -36,3 +36,10 @@ one sold singly, the rest blank) for a supplier priced **per item**; `case/produ
 supplier priced **per case** (cases of 6, 4 and 3, one with no pack size, one sold singly). Their
 basis is set on ACME's IP Settings: Suppliers page, not here. 3.99 for 6 (0.665) and 4.99 for 4
 (1.2475) show rounding half up after the calculation.
+
+| feed (JSON) | Gallery Homeware (acme-gallery, HCP-271) | `gallery/products.json` |
+
+HCP-271 (Publisher push to Infinite Images): four products, each with a main `image_url` plus an
+`images` list of further pictures with attributes (`alt`, `version`). The proof changes one
+picture's `version` (the change signal), removes one product (withdrawn) and sets one product's
+`status` to `recalled` (ACME's Lifecycle Rules), one step at a time.
