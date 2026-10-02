@@ -53,3 +53,9 @@ HCP-302 (Infinite Search filters, Ben's approval 2 Oct 2026): the Brightside fee
 was already there). ACME's IP Settings map them to the custom fields `supplier`, `range` and `availability`,
 granted to `acme-search` only, so every Infinite Search filter (HCP-272 §4) has values. KC-06 has neither
 new field, so the strip light it shares with BL-500 takes Brightside's values with no conflict to review.
+
+HCP-280 (Infinite Images end-to-end proof on ACME): five more Gallery Homeware products with **real third-party image
+URLs**, pushed by ACME's Products Publisher to the Infinite Images Loader. GL-101 has three working pictures (a
+2400×1600 JPEG at an address with no extension, a PNG and a WebP, two with `alt`), GL-102 one working picture (made
+unservable in the proof), GL-103 a Wikimedia address that is a real **404**, GL-104 Gravatar's default picture, a
+real **placeholder served with HTTP 200**, and GL-105 **no images at all**.

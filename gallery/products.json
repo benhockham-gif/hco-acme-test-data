@@ -61,6 +61,72 @@
           "version": "1"
         }
       ]
+    },
+    {
+      "sku": "GL-101",
+      "name": "Walnut chopping board",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "32.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://picsum.photos/id/1015/2400/1600",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+          "alt": "Detail of the grain",
+          "version": "1"
+        },
+        {
+          "url": "https://picsum.photos/id/1025/1600/1067.webp",
+          "alt": "On the worktop",
+          "version": "1"
+        }
+      ]
+    },
+    {
+      "sku": "GL-102",
+      "name": "Enamel camping mug",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "12.50",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://picsum.photos/id/1084/1200/800",
+      "images": []
+    },
+    {
+      "sku": "GL-103",
+      "name": "Copper kettle",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "45.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Hco-hcp-280-no-such-copper-kettle.jpg",
+      "images": []
+    },
+    {
+      "sku": "GL-104",
+      "name": "Ceramic plant pot",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "15.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://www.gravatar.com/avatar/69ce0fd68a50190e5b1aeb6802594ee1?d=mp&s=200",
+      "images": []
+    },
+    {
+      "sku": "GL-105",
+      "name": "Bamboo utensil set",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "8.99",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "",
+      "images": []
     }
   ]
 }
