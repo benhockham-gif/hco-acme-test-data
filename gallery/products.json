@@ -14,7 +14,7 @@
         {
           "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-02.png",
           "alt": "Side view",
-          "version": "1"
+          "version": "2"
         },
         {
           "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-03.png",
@@ -41,30 +41,13 @@
       ]
     },
     {
-      "sku": "GL-003",
-      "name": "Linen tea towel",
-      "brand": "Gallery Homeware",
-      "category": "Kitchen",
-      "price": "7.00",
-      "currency": "GBP",
-      "status": "",
-      "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-13.png",
-      "images": [
-        {
-          "url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-14.png",
-          "alt": "Folded",
-          "version": "1"
-        }
-      ]
-    },
-    {
       "sku": "GL-004",
       "name": "Glass storage jar",
       "brand": "Gallery Homeware",
       "category": "Kitchen",
       "price": "9.99",
       "currency": "GBP",
-      "status": "",
+      "status": "recalled",
       "image_url": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gw-7001.png",
       "images": [
         {
