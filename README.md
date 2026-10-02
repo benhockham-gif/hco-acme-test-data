@@ -59,3 +59,9 @@ URLs**, pushed by ACME's Products Publisher to the Infinite Images Loader. GL-10
 2400×1600 JPEG at an address with no extension, a PNG and a WebP, two with `alt`), GL-102 one working picture (made
 unservable in the proof), GL-103 a Wikimedia address that is a real **404**, GL-104 Gravatar's default picture, a
 real **placeholder served with HTTP 200**, and GL-105 **no images at all**.
+
+| feed (CSV) | Volume XL 1-4 (hco-test only, HCP-314) | `volume-xl/part-1.csv` to `part-4.csv` (`node tools/volume-xl.mjs [count]`) |
+
+HCP-314 (Pipeline run tracking at 30,000+ products): four made-up suppliers of 7,650 products each
+(30,600, like splendid's 30,079 across 9 suppliers), on branch `hcp-314-volume` only and read by the
+**hco-test** client (settings space ITH4) only, never ACME.
