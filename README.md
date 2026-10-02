@@ -29,6 +29,10 @@ third have no description, and every tenth name uses the supplier shorthand "S/S
 Terminology rule. After the timing it is trimmed to a few products, so the rest are withdrawn and
 aren't sent to Workers AI by the overnight enrichment job.
 
+HCP-310 (overnight enrichment throughput): the 2,600 products are restored with every name changed
+("Kettle 1.7 L no. 7" for "Kettle 1.7 L 7"), so all of them are new or changed and the next night's
+enrichment run is timed over all 2,600. Trimmed back to 10 products after the proof.
+
 | feed (CSV) | Case Supplies (acme-case, HCP-288) | `case/products.csv` |
 
 HCP-288 (price_each and price_per_pack): `volume/products.csv` has a `pack_size` column (two packs,
