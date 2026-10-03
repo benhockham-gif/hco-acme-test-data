@@ -59,3 +59,10 @@ URLs**, pushed by ACME's Products Publisher to the Infinite Images Loader. GL-10
 2400×1600 JPEG at an address with no extension, a PNG and a WebP, two with `alt`), GL-102 one working picture (made
 unservable in the proof), GL-103 a Wikimedia address that is a real **404**, GL-104 Gravatar's default picture, a
 real **placeholder served with HTTP 200**, and GL-105 **no images at all**.
+
+| feed (CSV) | Gtin A / Gtin B (hco-test only, splendid bundle smoke, HCP-314) | `gtin/a.csv`, `gtin/b.csv` |
+
+Splendid bundle smoke test on **hco-test** (settings space ITH4) only, on branch `hcp-bundle-smoke`: HCP-311's
+made-up barcode cases as two CSV suppliers (11 digits, wrong check digit, N/A, formatted, a placeholder on 3
+products, a real cross-supplier match G-11/J-7), one sku (G-WC) from both suppliers for HCP-313's id/supplier
+check, and image addresses for HCP-271's push. Never ACME.

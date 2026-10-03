@@ -1,0 +1,5 @@
+sku,name,brand,category,price,currency,gtin,image_url,description
+J-7,Gtin Eleven,Northwind Test,Kitchen,1.00,GBP,012345678905,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-11.png,Made up: the same barcode as gtin-a's G-11 (a real match).
+J-8,Gtin Wrong Check B,Northwind Test,Kitchen,1.00,GBP,5012345678901,,Made up: a wrong check digit.
+J-9,Gtin Placeholder Once,Northwind Test,Kitchen,1.00,GBP,4006381333931,,Made up: valid and only once in this file.
+G-WC,Gtin Shared Sku,Northwind Test,Kitchen,2.00,GBP,,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/gd-12.png,Made up: the same sku as gtin-a's G-WC (two suppliers, two products).

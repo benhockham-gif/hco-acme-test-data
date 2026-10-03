@@ -1,0 +1,8 @@
+sku,name,brand,category,price,currency,gtin,image_url,description
+G-11,Gtin Eleven,Northwind Test,Kitchen,1.00,GBP,12345678905,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-100.png,Made up: an 11-digit barcode (lost leading zero).
+G-WC,Gtin Wrong Check,Northwind Test,Kitchen,1.00,GBP,5012345678901,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-200.png,Made up: a wrong check digit.
+G-ND,Gtin Not Digits,Northwind Test,Kitchen,1.00,GBP,N/A,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-300.png,Made up: not digits.
+G-FM,Gtin Formatted,Northwind Test,Kitchen,1.00,GBP,5 012345-678900,https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png,Made up: formatted barcode.
+P-1,Gtin Placeholder One,Northwind Test,Kitchen,1.00,GBP,4006381333931,,Made up: placeholder barcode.
+P-2,Gtin Placeholder Two,Northwind Test,Kitchen,1.00,GBP,4006381333931,,Made up: placeholder barcode.
+P-3,Gtin Placeholder Three,Northwind Test,Kitchen,1.00,GBP,4006381333931,,Made up: placeholder barcode.
