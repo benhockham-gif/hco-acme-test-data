@@ -109,5 +109,110 @@
       <stock>in stock</stock>
       <status>Active</status>
     </product>
+    <product>
+      <sku>BL-311-A</sku>
+      <ean>12345678905</ean>
+      <title>HCP-311 test strip light, 11-digit barcode</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-B</sku>
+      <ean>5012345678901</ean>
+      <title>HCP-311 test strip light, wrong check digit</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-C</sku>
+      <ean>N/A</ean>
+      <title>HCP-311 test strip light, barcode not digits</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-D</sku>
+      <ean>5 012345-678900</ean>
+      <title>HCP-311 test strip light, formatted barcode</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-E</sku>
+      <ean>4006381333931</ean>
+      <title>HCP-311 test strip light, placeholder barcode 1</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-F</sku>
+      <ean>4006381333931</ean>
+      <title>HCP-311 test strip light, placeholder barcode 2</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
+    <product>
+      <sku>BL-311-G</sku>
+      <ean>4006381333931</ean>
+      <title>HCP-311 test strip light, placeholder barcode 3</title>
+      <brand>Brightside</brand>
+      <description>Made-up product for the HCP-311 barcode proof.</description>
+      <category>Strip lights</category>
+      <price>£9.99</price>
+      <image>https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png</image>
+      <colour></colour>
+      <wattage></wattage>
+      <parent_sku></parent_sku>
+      <accessories></accessories>
+      <status>Active</status>
+    </product>
   </products>
 </catalogue>
