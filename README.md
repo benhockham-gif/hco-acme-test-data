@@ -59,3 +59,11 @@ URLs**, pushed by ACME's Products Publisher to the Infinite Images Loader. GL-10
 2400×1600 JPEG at an address with no extension, a PNG and a WebP, two with `alt`), GL-102 one working picture (made
 unservable in the proof), GL-103 a Wikimedia address that is a real **404**, GL-104 Gravatar's default picture, a
 real **placeholder served with HTTP 200**, and GL-105 **no images at all**.
+
+| feed (CSV) | Size Supplies (size-co, HCP-315) | `size/products.csv` |
+
+HCP-315 (size_cm and size_in): made-up products whose names state a size in cm and inches
+(SZ-1, `30cm [11.8"]` -> 30 / 11.8, its length 26.5cm not used), in cm only (SZ-2, 16.5 -> 6.5 in),
+in inches only (SZ-7, `12"` -> 30.5 / 12), a real diameter that wins over the name (SZ-3, 28.8cm
+against "28cm" -> 28.8 / 11.3), two unclear names (SZ-4 `53 X 32.5CM`, SZ-5 `150mm Deep`: no size,
+an info note) and no size at all (SZ-6).
