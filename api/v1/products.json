@@ -3,7 +3,7 @@
     "supplier": "Kettle & Co (made up)",
     "page": 1,
     "per_page": 50,
-    "total": 8
+    "total": 5
   },
   "data": [
     {
@@ -102,63 +102,6 @@
       },
       "media": {
         "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/kc-06.png"
-      },
-      "type": "Strip lights",
-      "availability": "in stock",
-      "bundle_items": ""
-    },
-    {
-      "id": "KC-311-A",
-      "barcode": "012345678905",
-      "title": "HCP-311 test strip light, 11-digit barcode",
-      "maker": "Brightside",
-      "details": {
-        "summary": "Made-up product for the HCP-311 barcode proof."
-      },
-      "pricing": {
-        "amount": "9.99",
-        "currency": "GBP"
-      },
-      "media": {
-        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png"
-      },
-      "type": "Strip lights",
-      "availability": "in stock",
-      "bundle_items": ""
-    },
-    {
-      "id": "KC-311-B",
-      "barcode": "5012345678901",
-      "title": "HCP-311 test strip light, same wrong check digit",
-      "maker": "Brightside",
-      "details": {
-        "summary": "Made-up product for the HCP-311 barcode proof."
-      },
-      "pricing": {
-        "amount": "9.99",
-        "currency": "GBP"
-      },
-      "media": {
-        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png"
-      },
-      "type": "Strip lights",
-      "availability": "in stock",
-      "bundle_items": ""
-    },
-    {
-      "id": "KC-311-C",
-      "barcode": "4006381333931",
-      "title": "HCP-311 test strip light, same placeholder barcode",
-      "maker": "Brightside",
-      "details": {
-        "summary": "Made-up product for the HCP-311 barcode proof."
-      },
-      "pricing": {
-        "amount": "9.99",
-        "currency": "GBP"
-      },
-      "media": {
-        "main": "https://raw.githubusercontent.com/benhockham-gif/hco-acme-test-data/main/images/bl-500.png"
       },
       "type": "Strip lights",
       "availability": "in stock",
