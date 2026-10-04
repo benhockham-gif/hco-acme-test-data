@@ -65,3 +65,12 @@ added in one commit and changed in the next. GL-106 has a fixed picture plus one
 which serves a different photograph on each request, with `version` 1; the second commit sets it to `version` 2,
 the change signal, so Images re-fetches a new picture. GL-107 has one picture; the second commit removes it from
 the feed, so Products withdraws it. GL-106 stays in the feed; GL-107 stays removed.
+
+| feed (CSV) | Halden Catering Supply (hco-test, Confluence space ISVOL, HCP-324) | `volume/hco-test-products.csv` (`node tools/search-volume.mjs [count]`) |
+
+HCP-324 (Infinite Search speed at 30k+ products, Ben's approval 4 Oct 2026): 30,600 made-up hospitality products for a
+throwaway Infinite Products + Infinite Search deployment `hco-test` (settings in the space ISVOL), like Splendid's
+30,009. Realistic names ("Marlowe Porcelain Flat Plate 8 cm White"), codes (`HAL-10000`), valid EAN-13 barcodes, ten
+brands, 16 supplier categories mapped into a three-level tree (`node tools/search-volume.mjs --tree` prints it),
+prices, and range, colour and material values; a quarter have no description. The file is the same on every run.
+Remove it once the hco-test deployments are torn down (HCP-304).
