@@ -127,6 +127,34 @@
       "status": "",
       "image_url": "",
       "images": []
+    },
+    {
+      "sku": "GL-106",
+      "name": "Linen tea towel",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "7.50",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://picsum.photos/id/1060/1200/800",
+      "images": [
+        {
+          "url": "https://picsum.photos/1000/750",
+          "alt": "Folded on the rail",
+          "version": "1"
+        }
+      ]
+    },
+    {
+      "sku": "GL-107",
+      "name": "Cast iron trivet",
+      "brand": "Gallery Homeware",
+      "category": "Kitchen",
+      "price": "14.00",
+      "currency": "GBP",
+      "status": "",
+      "image_url": "https://picsum.photos/id/1074/900/600",
+      "images": []
     }
   ]
 }

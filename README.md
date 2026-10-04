@@ -59,3 +59,9 @@ URLs**, pushed by ACME's Products Publisher to the Infinite Images Loader. GL-10
 2400×1600 JPEG at an address with no extension, a PNG and a WebP, two with `alt`), GL-102 one working picture (made
 unservable in the proof), GL-103 a Wikimedia address that is a real **404**, GL-104 Gravatar's default picture, a
 real **placeholder served with HTTP 200**, and GL-105 **no images at all**.
+
+HCP-285 (Infinite Images sign-off on ACME, from the real Products push): two more Gallery Homeware products,
+added in one commit and changed in the next. GL-106 has a fixed picture plus one at `picsum.photos/1000/750`,
+which serves a different photograph on each request, with `version` 1; the second commit sets it to `version` 2,
+the change signal, so Images re-fetches a new picture. GL-107 has one picture; the second commit removes it from
+the feed, so Products withdraws it. GL-106 stays in the feed; GL-107 stays removed.
