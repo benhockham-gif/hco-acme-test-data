@@ -5,6 +5,8 @@
 // IP Settings: Suppliers page). Every product is invented and the
 // output is the same on every run (no randomness), so the before/after measurements compare
 // like with like.
+// The file must gzip to under 1 MB: raw.githubusercontent.com serves it compressed and the IP
+// Loader takes a compressed source only when one 1 MB chunk holds it whole (HCP-129).
 // Run: node tools/search-volume.mjs [count]   (default 30600) -> volume/hco-test-products.csv
 // The category tree for ISVOL's IP Settings: Categories: node tools/search-volume.mjs --tree
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -60,10 +62,10 @@ for (let i = 0; i < count; i++) {
   const size = unit === "l" ? 2 + (k % 8) : unit === "cl" ? 5 + ((k * 3) % 60) : 8 + ((k * 2) % 30);
   const finish = FINISH[(k + i) % FINISH.length];
   const name = `${range} ${material} ${noun} ${size} ${unit} ${colour}`;
-  const price = (1.25 + ((i * 37) % 9000) / 100 + (unit === "l" ? 40 : 0)).toFixed(2);
-  const description = i % 4 === 3 ? "" :
-    `The ${range} ${noun.toLowerCase()} in ${colour.toLowerCase()} ${material.toLowerCase()} with a ${finish} finish, ` +
-    `${size} ${unit}. Made by ${brand} for busy ${USES[i % USES.length]}; ${i % 2 ? "dishwasher safe" : "stackable for storage"}.`;
+  const price = (1.25 + ((k * 37 + size * 113 + Math.floor(i / 97)) % 9000) / 100 + (unit === "l" ? 40 : 0)).toFixed(2);
+  const description = i % 4 >= 2 ? "" :
+    `The ${range} ${noun.toLowerCase()} in ${colour.toLowerCase()} ${material.toLowerCase()} with a ${finish} finish; ` +
+    `${i % 2 ? "dishwasher safe" : "stackable for storage"}.`;
   rows.push([
     `${slug(brand).slice(0, 3).toUpperCase()}-${String(10000 + i)}`, name, brand, sub, price, "GBP",
     description, ean13(`50${String(1000000000 + i * 7).slice(-10)}`), range, colour, material,
